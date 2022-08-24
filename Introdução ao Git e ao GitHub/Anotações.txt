@@ -496,3 +496,123 @@ origin  https://github.com/python/cpython.git (push)
 
 
 
+------------------------------------
+/*Data:24/08/2022 - quarta*/
+Desafio de Projeto do Git/GitHub
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git
+$ ls
+DIO/
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git
+$ cd DIO
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO
+$ git clone https://github.com/AlineFLA/dio-desafio-github-primeiro-repositorio.git
+Cloning into 'dio-desafio-github-primeiro-repositorio'...
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 12 (delta 2), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (12/12), done.
+Resolving deltas: 100% (2/2), done.
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO
+$ cd dio-desafio-github-primeiro-repositorio/
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ ls
+'Introdução ao Git e ao GitHub'/   README.md
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "Introdu\303\247\303\243o ao Git e ao GitHub/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ cd Introdução\ ao\ Git\ e\ ao\ GitHub/
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio/Introdução ao Git e ao GitHub (main)
+$ ls
+Anotações.txt
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio/Introdução ao Git e ao GitHub (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ./
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio/Introdução ao Git e ao GitHub (main)
+$ cd ..
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ ls
+'Introdução ao Git e ao GitHub'/   README.md
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git add *
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   "Introdu\303\247\303\243o ao Git e ao GitHub/Anota\303\247\303\265es.txt"
+
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git commit -m "adiciona pasta de Introdução ao Git e ao GitHub"
+[main abc8968] adiciona pasta de Introdução ao Git e ao GitHub
+ 1 file changed, 498 insertions(+)
+ create mode 100644 "Introdu\303\247\303\243o ao Git e ao GitHub/Anota\303\247\303\265es.txt"
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git remote -v
+origin  https://github.com/AlineFLA/dio-desafio-github-primeiro-repositorio.git (fetch)
+origin  https://github.com/AlineFLA/dio-desafio-github-primeiro-repositorio.git (push)
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'https://github.com/AlineFLA/dio-desafio-github-primeiro-repositorio.git'
+--Deu erro, pois coloquei o nome "master" ou invés de "main"
+
+feliz@LAPTOP-1KEJMEO0 MINGW64 ~/Git/DIO/dio-desafio-github-primeiro-repositorio (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 3.77 KiB | 1.88 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/AlineFLA/dio-desafio-github-primeiro-repositorio.git
+   cc39379..abc8968  main -> main
+
